@@ -1,0 +1,23 @@
+name: Addemod/characters-customization
+version: 1.0.0
+description: Customize your character
+author: Addemod
+license: LGPL-3.0-or-later
+server:
+  main:
+  - Addemod.CharactersCustomization.Server
+  include:
+  - Addemod.CharactersCustomization.Shared
+client:
+  main:
+  - Addemod.CharactersCustomization.Client
+  include:
+  - Addemod.CharactersCustomization.Shared
+  files:
+  - Overlays/CharactersCustomizationOverlay.html
+dependencies:
+  Addemod/characters: ^1.0.0
+repositories:
+- name: Addemod/characters
+  type: local
+  path: D:\NFive\development\source\repos\characters

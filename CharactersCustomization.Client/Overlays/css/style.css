@@ -1,0 +1,332 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	cursor: url(../assets/cursor/default.png), auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	/* background: #252525; */
+	background-image: url(C:/Users/Adam/Pictures/charcuzback.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.menu-bubbles .bubble {
+	position: absolute;
+	background: rgba(47, 72, 88, 0.9);
+	/* background: linear-gradient(90deg, hsla(0, 0%, 98%, 0.5) 0%, #252525 100%); */
+	padding: 18px;
+	border-radius: 500px;
+	line-height: 0;
+	cursor: url(../assets/cursor/pointer.cur), auto;
+	color: black;
+	top: 50%;
+	left: 50%;
+	margin: -33px;
+	transition-duration: 0.2s;
+}
+
+.menu-bubbles .bubble.is-active {
+	background: rgba(27, 42, 51, 0.9);
+}
+
+.menu-bubbles .bubble.bubble-face {
+	margin-top: -205px;
+	margin-left: 155px;
+}
+
+.menu-bubbles .bubble.bubble-features {
+	margin-top: -145px;
+	margin-left: 190px;
+}
+
+.menu-bubbles .bubble.bubble-hair {
+	margin-top: -75px;
+	margin-left: 200px;
+}
+
+.menu-bubbles .bubble.bubble-clothes {
+	margin-top: -5px;
+	margin-left: 190px;
+}
+
+.menu-bubbles .bubble.bubble-stats {
+	margin-top: 60px;
+	margin-left: 160px;
+}
+
+#side-menu-title {
+	margin: 5px 20px 5px 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-menu {
+	color: #86BBD8;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -400px 310px;
+	width: 400px;
+	max-height: 800px;
+	border-radius: 8px;
+	/* background: linear-gradient(90deg, hsla(0, 0%, 98%, 0.5) 0%, rgba(249,249,249,1) 100%); */
+	background: rgba(47, 72, 88, 0.9);
+}
+
+.side-menu .menu {
+	display: none;
+	overflow-y: auto;
+	height: 700px;
+}
+.side-menu .menu label {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.side-menu .menu .image-list {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow-y: auto;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-self: center;
+}
+.side-menu .menu .image-list li {
+	position: relative;
+	width: 80px;
+	margin: 0;
+}
+.side-menu .menu .image-list li img {
+    box-sizing: border-box;
+	width: inherit;
+}
+.side-menu .menu .image-list li.is-active img {
+	border: 2px solid white;
+}
+.side-menu .menu .image-list li.is-active .fa-stack {
+	position: absolute;
+	right: 0;
+	font-size: 0.5em;
+}
+
+.side-menu .menu .menu-section {
+	border-top: 1px solid #336699;
+	padding: 12px 20px;
+}
+
+
+
+
+ul.clickable-items li {
+	cursor: url(../assets/cursor/pointer.cur), auto;
+}
+.has-text-white {
+	color: white;
+}
+
+/* Round slider */
+
+
+.rs-range-color  {
+    background-color: #9ee493;
+}
+.rs-path-color  {
+    background-color: #daf7dc;
+}
+.rs-handle  {
+    background-color: #daf7dc;
+    padding: 7px;
+    border: 2px solid #daf7dc;
+}
+.rs-handle.rs-focus  {
+    border-color: #9ee493;
+}
+.rs-handle:after  {
+    border-color: #9ee493;
+    background-color: #9ee493;
+}
+.rs-border  {
+    border-color: transparent;
+}
+.rs-bg-color {
+	background: #252525;
+}
+
+.styled-range {
+	-webkit-appearance: none;
+	width: 100%;
+	background: none;
+}
+.styled-range:focus {
+	outline: none;
+}
+.styled-range::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 0px 0px 0px #000000;
+	background: #9ee493;
+	border-radius: 50px;
+	border: 0px solid #DAF7DC;
+}
+.styled-range::-webkit-slider-thumb {
+	box-shadow: 0px 0px 1px #000000;
+	border: 1px solid #000000;
+	height: 16px;
+	width: 16px;
+	border-radius: 50px;
+	background: #FFFFFF;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -6.5px;
+}
+.styled-range:focus::-webkit-slider-runnable-track {
+	background: #9ee493;
+}
+.styled-range::-moz-range-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 0px 0px 0px #000000;
+	background: #9ee493;
+	border-radius: 50px;
+	border: 0px solid #DAF7DC;
+}
+.styled-range::-moz-range-thumb {
+	box-shadow: 0px 0px 1px #000000;
+	border: 1px solid #000000;
+	height: 16px;
+	width: 16px;
+	border-radius: 50px;
+	background: #FFFFFF;
+	cursor: pointer;
+}
+.styled-range::-ms-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	animate: 0.2s;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+.styled-range::-ms-fill-lower {
+	background: #9ee493;
+	border: 0px solid #DAF7DC;
+	border-radius: 100px;
+	box-shadow: 0px 0px 0px #000000;
+}
+.styled-range::-ms-fill-upper {
+	background: #9ee493;
+	border: 0px solid #DAF7DC;
+	border-radius: 100px;
+	box-shadow: 0px 0px 0px #000000;
+}
+.styled-range::-ms-thumb {
+	box-shadow: 0px 0px 1px #000000;
+	border: 1px solid #000000;
+	height: 16px;
+	width: 16px;
+	border-radius: 50px;
+	background: #FFFFFF;
+	cursor: pointer;
+}
+.styled-range:focus::-ms-fill-lower {
+	background: #9ee493;
+}
+.styled-range:focus::-ms-fill-upper {
+	background: #9ee493;
+}
+
+.input-wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.input-wrap span {
+	font-size: 12px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.menu-section .menu-section-title {
+	font-size: 22px;
+}
+
+.menu-section .menu-section-subtitle {
+	font-size: 12px;
+}
+
+.menu-section .menu-group .menu-group-title {
+	color: #3c72a8;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9ee493;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+/* Color palette */
+.color-palette {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-self: center;
+}
+.color-palette .color {
+	margin: 2px;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+
+.input-wrap .range-buttons .range-decrease {
+	margin-right: 5px;
+}
+.input-wrap .range-buttons .range-increase {
+	margin-left: 5px;
+}

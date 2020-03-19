@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BEE87C9-A101-44A1-8EB5-5C9C3081B845}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Addemod.CharactersCustomization.Client</RootNamespace>
+    <AssemblyName>Addemod.CharactersCustomization.Client.net</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AllowedReferenceRelatedFileExtensions>
+      .allowedextension
+    </AllowedReferenceRelatedFileExtensions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Addemod.Characters.Client.net">
+      <HintPath>..\plugins\Addemod\characters\Addemod.Characters.Client.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Addemod.Characters.Shared.net">
+      <HintPath>..\plugins\Addemod\characters\Addemod.Characters.Shared.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CitizenFX.Core.Client, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CitizenFX.Core.Client.1.0.1688\lib\net45\CitizenFX.Core.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="JetBrains.Annotations, Version=2019.1.3.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBrains.Annotations.2019.1.3\lib\net20\JetBrains.Annotations.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NFive.SDK.Client.net, Version=0.1.0.67, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NFive.SDK.Client.0.1.0.67\lib\net452\NFive.SDK.Client.net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NFive.SDK.Core.net, Version=0.1.0.60, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NFive.SDK.Core.0.1.0.60\lib\net452\NFive.SDK.Core.net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NGettext, Version=0.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NGettext.0.6.4\lib\net45\NGettext.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CameraPositionEnum.cs" />
+    <Compile Include="CharactersCustomizationService.cs" />
+    <Compile Include="Overlays\CharactersCustomizationOverlay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CharactersCustomization.Shared\CharactersCustomization.Shared.csproj">
+      <Project>{B4BF2712-C1AF-4C4F-A8B8-A363A1448E73}</Project>
+      <Name>CharactersCustomization.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Overlays\assets\cursor\default.png" />
+    <Content Include="Overlays\assets\cursor\pointer.cur" />
+    <Content Include="Overlays\assets\heritage\Face-0.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-1.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-10.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-11.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-12.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-13.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-14.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-15.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-16.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-17.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-18.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-19.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-2.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-20.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-21.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-22.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-23.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-24.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-25.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-26.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-27.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-28.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-29.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-3.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-30.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-31.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-32.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-33.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-34.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-35.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-36.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-37.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-38.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-39.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-4.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-40.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-41.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-42.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-43.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-44.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-45.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-5.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-6.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-7.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-8.jpg" />
+    <Content Include="Overlays\assets\heritage\Face-9.jpg" />
+    <Content Include="Overlays\assets\icons\barber.png" />
+    <Content Include="Overlays\assets\icons\clothes.png" />
+    <Content Include="Overlays\assets\icons\face.png" />
+    <Content Include="Overlays\assets\icons\features.png" />
+    <Content Include="Overlays\assets\icons\randomize.png" />
+    <Content Include="Overlays\assets\icons\stats.png" />
+    <Content Include="Overlays\CharactersCustomizationOverlay.html" />
+    <Content Include="Overlays\css\style.css" />
+    <Content Include="Overlays\scripts\jquery.mousewheel.min.js" />
+    <Content Include="Overlays\scripts\main.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
